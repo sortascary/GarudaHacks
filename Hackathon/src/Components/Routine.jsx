@@ -37,8 +37,16 @@ function Routine() {
         <p>{day[d - 1]} {h}:{min}</p>
       </div>
       <ul>
-        {data.map((item) => (
-          <li key={item.id}>{item.name}</li>
+        {data.map((routine) => (
+          <li key={routine.id}>
+          {d === 1 && routine.Listmonday}
+          {d === 2 && routine.Listtuesday}
+          {d === 3 && routine.Listwednesday}
+          {d === 4 && routine.Listthursday}
+          {d === 5 && routine.Listfriday}
+          {d === 6 && routine.Listsaturday}
+          {d === 0 && routine.Listahad}
+        </li>
         ))}
       </ul>
     </>
