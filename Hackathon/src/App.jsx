@@ -22,6 +22,8 @@ function App() {
 function Mainstuff() {
   const { currentUser } = useAuth();
 
+  
+
   return (
     <>
       <div style={{display: 'flex'}}>
@@ -46,7 +48,7 @@ function Mainstuff() {
               }
             />
             <Route
-              path="/Home"
+              path="/"
               element={
                 <ProtectedRoute>
                   <Home />
