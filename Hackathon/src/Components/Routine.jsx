@@ -30,27 +30,40 @@ function Routine() {
     fetchData();
   }, []);
 
+  const renderListForDay = (routine) => {
+    switch (d) {
+      case 0: return routine.Listsunday;
+      case 1: return routine.Listmonday;
+      case 2: return routine.Listtuesday;
+      case 3: return routine.Listwednesday;
+      case 4: return routine.Listthursday;
+      case 5: return routine.Listfriday;
+      case 6: return routine.Listsaturday;
+      default: return [];
+    }
+  };
+
   return (
     <>
       <h1 style={{ textAlign: 'center' }}>Routine</h1>
       <div style={{ width: '500px', textAlign: 'left' }}>
-        <p>{day[d - 1]} {h}:{min}</p>
+        <p>{day[d - 1]} {h}:{min < 10 ? `0${min}` : min}</p>
       </div>
       <ul>
         {data.map((routine) => (
           <li key={routine.id}>
-          {d === 1 && routine.Listmonday}
-          {d === 2 && routine.Listtuesday}
-          {d === 3 && routine.Listwednesday}
-          {d === 4 && routine.Listthursday}
-          {d === 5 && routine.Listfriday}
-          {d === 6 && routine.Listsaturday}
-          {d === 0 && routine.Listahad}
-        </li>
+            {renderListForDay(routine) && renderListForDay(routine).map((item, index) => (
+              <div key={index}>
+                <input type="checkbox" id={`item-${index}`} />
+                <label htmlFor={`item-${index}`}>{item}</label>
+              </div>
+            ))}
+          </li>
         ))}
       </ul>
     </>
   );
 }
+
 
 export default Routine;
