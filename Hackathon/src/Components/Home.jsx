@@ -20,7 +20,7 @@ function Home() {
     <>
     <h1 style={{textAlign: 'center'}}>Home</h1>
     <div style={{width: '500px', textAlign: 'left'}}>
-    <p>{day[d - 1]} {h}:{min}</p>
+    <p style={{ textAlign: 'right' }}>{day[d - 1]} {h}:{min < 10 ? `0${min}` : min}</p>
     </div>
     </>
   )
