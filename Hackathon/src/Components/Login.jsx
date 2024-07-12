@@ -82,7 +82,7 @@ const handleClick = (e) => {
                 </div>
                   <label onClick={handleChangename} style={{textAlign:'center'}}>{otherName}</label>
               </form>
-              <div style={{width: '300px'}}>
+              <div style={{width: '400px'}}>
                 <div className='logintextlogo'>
                   <h1 className='logo'>Gym</h1>
                   <h1 className='logo1'>Bro</h1>

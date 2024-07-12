@@ -36,7 +36,9 @@ function Chat() {
         text: newMessage  
       };
 
+      setData(prevData => [...prevData, { id: documentId, text: newMessage }]);
       handleSendMessage(collectionName, documentId, newField);
+      
       message.current.value = "";  
     }
   };
@@ -45,21 +47,21 @@ const handleSendMessage = async (collectionName, documentId, newField) => {
   try {
     const documentRef = doc(db, collectionName, documentId);
     await updateDoc(documentRef, newField);
-    console.log('Field added successfully');
+    messageLoad();
   } catch (error) {
     console.error('Error adding field: ', error);
   }
 };
 
 function messageLoad(){
-  data.map((msg) => (
+  return data.map((msg) => (
     <React.Fragment key={msg.id}>
       <div style={{display:'flex', justifyContent: 'right'}}>
         <li className='message'>{msg.text}</li>
         <img src='\src\assets\image.png' width={'40px'} height={'40px'}/>
       </div>
     </React.Fragment>
-  ))
+  ));
 }
 
   const d = currentTime.getDay();
@@ -77,12 +79,12 @@ function messageLoad(){
       </div>
       <div className='chatbox'>
         <ul className='listwork'>
-          {messageLoad}
+          {messageLoad()}
         </ul>
       </div>
       <div style={{display:'flex'}}>
-        <input type='text' placeholder='Enter message' ref={message}/>
-        <input type='button' value={'yes'} onClick={handleMessage}/> 
+        <input type='text' className='InputMSG' placeholder='Enter message' ref={message}/>
+        <input type='button' className='ClickMSG' value={'Send'} onClick={handleMessage}/> 
       </div>
     </>
   )

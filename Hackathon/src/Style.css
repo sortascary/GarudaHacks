@@ -11,22 +11,21 @@ body{
     display: flex;
     background-color: #c3c3c3;
     border-radius: 5px;
-    padding-left: 80px;
+    padding-left: 120px;
 
   
    }.logintextlogo .logo{
     font-size: 28px;
     font-weight: lighter;
-    background-color: rgb(126, 132, 172);
     border-radius: 10px;
    }.logintextlogo .logo1{
-      background-color: rgb(126, 132, 172);
       border-radius: 10px;
       padding: -10px;
     }.Slogan{
-    padding-top: 30px;
+    padding-top: 20px;
     font-size: 20px;
     font-weight: lighter;
+    margin: 40px;
    }
 
   .form{
@@ -35,15 +34,16 @@ body{
     text-align: left;
     margin: auto;
     background-color: rgb(182, 170, 111);
-    padding: 30px;
+    padding: 90px 70px;
     width: max-content;
     max-width: auto; 
     border-radius: 15px;
+    
   }
   .Sidebar{
     width: 250px;
     height: 100vh;
-    background-color: rgb(251, 246, 226);
+    background-color: rgb(255, 211, 117);
     display: inline-block;
     text-align: center;
   }
@@ -161,18 +161,21 @@ body{
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
+    width: 300px;
   }
   
   form button {
-    padding: 0.30rem;
-    background-color: rgb(251, 246, 226);
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-    padding: 10px;
+    display: inline-block;
+    padding: 10px 60px;
+    margin: 0px 0px 30px;
+    border-radius: 10px;
+    text-align: center;
+    bottom: 0;
+    color: #000000;
+    font-weight: bold;
+    background-color: rgb(91, 136, 101);
+    text-decoration: none;
+    min-width: 10px;
   }
   
   form button:hover {
@@ -217,7 +220,7 @@ body{
 
 .chatheader{
   display: flex;
-  width: 100svh;
+  width: 160vh;
   justify-Content: space-between;
   border-bottom: 2px #a0a0a0 solid;
   padding: 20px;
@@ -230,7 +233,7 @@ body{
 .chatbox{
   justify-content: right;
   text-align: right;
-  width: 100svh;
+  width: 160svh;
   height: 65vh;
   border-radius: 20px;
   border: 2px #858585 solid;
@@ -243,6 +246,32 @@ body{
   border-radius: 20px;
   margin: 0 10px;
   padding: 10px;
+}
+
+.InputMSG{
+    padding: 0.30rem;
+    background-color: rgb(251, 246, 226);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    width: 150svh;
+    height: 60px;
+}
+.ClickMSG{
+  display: inline-block;
+    padding: 30px 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    background-color: rgb(244, 206, 20);
+    text-decoration: none;
+    min-width: 90px;
+
 }
 
   switch-button {
