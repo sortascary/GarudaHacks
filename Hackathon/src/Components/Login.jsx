@@ -87,7 +87,7 @@ const handleClick = (e) => {
                   <h1 className='logo'>Gym</h1>
                   <h1 className='logo1'>Bro</h1>
                 </div>
-                <p>ppp</p>
+                <p className='Slogan'>"GymBro! - Jadikan Latihan Kebugaran sebagai Gaya Hidup."</p>
               </div>
             </div>
           </div>         

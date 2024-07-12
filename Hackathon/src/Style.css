@@ -6,29 +6,37 @@ body{
     padding: 0;
   }
 
-  .LogInPage{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-  }
 
- .logintextlogo{
-  display: flex;
-  background-color: #131842;
- }
+  .logintextlogo{
+    display: flex;
+    background-color: #c3c3c3;
+    border-radius: 5px;
+    padding-left: 80px;
+
+  
+   }.logintextlogo .logo{
+    font-size: 28px;
+    font-weight: lighter;
+    background-color: rgb(126, 132, 172);
+    border-radius: 10px;
+   }.logintextlogo .logo1{
+      background-color: rgb(126, 132, 172);
+      border-radius: 10px;
+      padding: -10px;
+    }.Slogan{
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: lighter;
+   }
 
   .form{
     display: flex;
     flex-direction: column;
     text-align: left;
     margin: auto;
-    background-color: rgb(244, 206, 20);
+    background-color: rgb(182, 170, 111);
     padding: 30px;
-    width: 300px;
+    width: max-content;
     max-width: auto; 
     border-radius: 15px;
   }
@@ -49,7 +57,7 @@ body{
   }
   .Sidebar .logo1 {
     display: inline-block;
-    color: #ffffff; 
+    color: #000000; 
     font-weight: lighter; 
     font-size: 36px;
     padding: 10px 10px 10px 0px;
@@ -136,6 +144,7 @@ body{
   form {
     display: flex;
     flex-direction: column;
+    
   }
   
   form label {
@@ -195,8 +204,7 @@ body{
     background-color: #5a6268;
   }
 
-
-
+  
 
 
 
