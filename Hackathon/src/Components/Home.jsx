@@ -21,8 +21,7 @@ function Home() {
 
   return (
     <>
-    <h1 style={{textAlign: 'center'}}>Home</h1>
-    <div style={{width: '500px', textAlign: 'left'}}>
+    <div style={{width: '100svh', textAlign: 'left'}}>
     <p style={{ textAlign: 'right' }}>{day[d - 1]} {h}:{min < 10 ? `0${min}` : min} {ampm}</p>
     </div>
     </>

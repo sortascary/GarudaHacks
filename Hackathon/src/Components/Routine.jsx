@@ -49,7 +49,7 @@ function Routine() {
 
   return (
     <>
-      <div style={{ width: 'auto', textAlign: 'left' }}>
+      <div style={{ width: '100svh', textAlign: 'left' }}>
         <p style={{ textAlign: 'right' }}>{day[d - 1]} {h}:{min < 10 ? `0${min}` : min} {ampm}</p>
         <h2 style={{ textAlign: 'center', fontSize: '64px' }}>Todays Challange</h2>
       </div>

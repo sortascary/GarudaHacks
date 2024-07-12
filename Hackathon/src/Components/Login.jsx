@@ -74,10 +74,8 @@ const handleClick = (e) => {
             <div style={{display:'flex'}}>
               <form className='form' onSubmit={handleClick}>
                 <h1>{name}</h1>
-                <label htmlFor='email'>Email: </label>
-                <input id='email' type='Email' onChange={(e) => setEmail(e.target.value)}/>
-                <label htmlFor='Password'>Password: </label>
-                <input id='Password' type='Password' onChange={(e) => setPassword(e.target.value)}/>
+                <input id='email' type='Email' placeholder='Enter your Email' onChange={(e) => setEmail(e.target.value)}/>
+                <input id='Password' type='Password' placeholder='Enter your password' onChange={(e) => setPassword(e.target.value)}/>
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>
                   <button type='onSubmit'>{name}</button>
                   {name === "Login" ? <label onClick={SignInGoogle}>Google</label> : null}
