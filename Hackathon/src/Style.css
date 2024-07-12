@@ -51,7 +51,7 @@ body{
     display: inline-block;
     color: #ffffff; 
     font-weight: lighter; 
-    font-size: 42px;
+    font-size: 36px;
     padding: 10px 10px 10px 0px;
   }
   .Sidebar .home a{
@@ -59,7 +59,7 @@ body{
     padding: 10px 40px;
     border-radius: 10px;
     text-align: center;
-    margin: 10px;
+    margin: 20px;
     color: #000000;
     font-weight: bold;
     background-color: rgb(73, 94, 87);
