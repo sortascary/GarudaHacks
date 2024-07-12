@@ -17,8 +17,10 @@ function Sidebar() {
         <>
             <nav className='Sidebar'>
                 <ul>
-                    <h1 className='logo'>Gym</h1>
-                    <h1 className='logo1'>Bro</h1>
+                    <div className='headerSidebar'>
+                        <h1 className='logo'>Gym</h1>
+                        <h1 className='logo1'>Bro</h1>
+                    </div>
                     <li className='home'>
                         <Link to={'/'}>Home</Link>
                     </li>

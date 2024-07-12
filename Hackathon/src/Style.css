@@ -39,7 +39,6 @@ body{
     display: inline-block;
     color: #ffffff; /* Warna teks */
     font-weight: bold; /* Tebal teks */
-    background-color: rgb(244, 206, 20);
     padding: 10px 0px 10px 10px;
 
   }
@@ -47,7 +46,6 @@ body{
     display: inline-block;
     color: #ffffff; 
     font-weight: lighter; 
-    background-color: rgb(244, 206, 20);
     padding: 10px 10px 10px 0px;
   }
   .Sidebar .home a,
@@ -78,6 +76,11 @@ body{
 
   .Sidebar ul{
     padding: 0;
+  }
+
+  .headerSidebar{
+    background-color: rgb(244, 206, 20);
+    top: 0;
   }
 
   .logout{
