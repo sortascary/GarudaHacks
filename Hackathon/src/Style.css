@@ -85,12 +85,21 @@ body{
     background-color: rgb(244, 206, 20);
   }
 
-  .logout{
+  .logout {
+    margin-top: auto;
+    position: absolute;
+    justify-items: center;
+    bottom: 0;
+    margin: 20px 30px;
+  }
+
+  .logout a{
     display: inline-block;
     padding: 10px 40px;
     border-radius: 10px;
     text-align: center;
     margin: 10px;
+    bottom: 0;
     color: #000000;
     font-weight: bold;
     background-color: rgb(73, 94, 87);
@@ -99,6 +108,10 @@ body{
 
   }
 
+  .logout a:hover{
+    box-shadow: 0px 2px 10px #000000;
+    color: white;
+  }
   .listwork{
     line-height: 50px;
   }
