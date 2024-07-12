@@ -19,7 +19,7 @@ function Sidebar() {
                 <ul>
                     <div className='headerSidebar'>
                         <h1 className='logo'>Gym</h1>
-                        <h1 className='logo1'>Bro</h1>
+                        <h1 className='logo1'>Bro!</h1>
                     </div>
                     <li className='home'>
                         <Link to={'/'}>Home</Link>
