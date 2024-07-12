@@ -24,10 +24,10 @@ function Sidebar() {
                     <li className='home'>
                         <Link to={'/'}>Home</Link>
                     </li>
-                    <li className='chat'>
+                    <li className='home'>
                         <Link to={'/Chat'}>Chat</Link>
                     </li>
-                    <li className='list'>
+                    <li className='home'>
                         <Link to={'/List'}>List</Link>
                     </li>
                     <li className='logout'>
