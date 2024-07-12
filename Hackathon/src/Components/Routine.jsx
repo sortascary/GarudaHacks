@@ -57,7 +57,7 @@ function Routine() {
         {data.map((routine) => (
           <li key={routine.id}>
             {renderListForDay(routine) && renderListForDay(routine).map((item, index) => (
-              <div key={index}>
+              <div key={index} className='listy'>
                 <input type="checkbox" id={`item-${index}`} />
                 <label htmlFor={`item-${index}`}>{item}</label>
               </div>
