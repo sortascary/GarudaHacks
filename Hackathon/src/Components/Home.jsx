@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { auth } from '../Config/Firebase';
 
 
 function Home() {
@@ -27,9 +28,21 @@ function Home() {
       <nav>
         <div>
           <article>
+            
+            <h1 style={{fontSize:'32px'}}>Hallo {auth.currentUser.email}!</h1>
             <img src=''></img>
             <h1>"GymBro! - Jadikan Latihan Kebugaran sebagai Gaya Hidup."</h1>
-            
+            <div className='databoxboxer'>
+              <div className='databox'>
+                <p>Workouts finished: 21</p>
+              </div>
+              <div className='databox'>
+                <p>Streak: 9</p>
+              </div>
+            </div>
+            <div width='100svh' className='databox'>
+              <img src='\src\assets\gra[h.png' alt='Graph' width='80%' />
+            </div>
 
             
             

@@ -190,6 +190,22 @@ body{
     font-size: 1rem;
   }
   
+.databoxboxer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.databox{
+  background-color: rgb(244, 206, 20);
+  padding: 25px;
+  margin: 10px;
+  box-shadow: 5px 5px #000000;
+}
+
+.databox p{
+  font-size: 28px;
+}
+
   switch-button {
     margin-top: 1rem;
     padding: 0.75rem;
