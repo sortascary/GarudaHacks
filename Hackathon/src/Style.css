@@ -16,6 +16,10 @@ body{
     width: 100vw;
   }
 
+ .logintextlogo{
+  display: flex;
+  background-color: #131842;
+ }
 
   .form{
     display: flex;
@@ -80,7 +84,6 @@ body{
 
   .headerSidebar{
     background-color: rgb(244, 206, 20);
-    top: 0;
   }
 
   .logout{

@@ -69,9 +69,10 @@ const handleClick = (e) => {
     return (
     <>
         <div className='LogInPage'>
-          <div >
-            <h1>{name}</h1>
-            <form className='form' onSubmit={handleClick}>
+          <div style={{backgroundColor: '#FBF6E2'}}>
+            <div style={{display:'flex'}}>
+              <form className='form' onSubmit={handleClick}>
+                <h1>{name}</h1>
                 <label htmlFor='email'>Email: </label>
                 <input id='email' type='Email' onChange={(e) => setEmail(e.target.value)}/>
                 <label htmlFor='Password'>Password: </label>
@@ -80,11 +81,19 @@ const handleClick = (e) => {
                   <button type='onSubmit'>{name}</button>
                   {name === "Login" ? <label onClick={SignInGoogle}>Google</label> : null}
                 </div>
-                
-            </form>
-            <button type='button' onClick={handleChangename}>{otherName}</button>
-          </div>
+                  <label onClick={handleChangename} style={{textAlign:'center'}}>{otherName}</label>
+              </form>
+              <div style={{width: '300px'}}>
+                <div className='logintextlogo'>
+                  <h1 className='logo'>Gym</h1>
+                  <h1 className='logo1'>Bro</h1>
+                </div>
+                <p>ppp</p>
+              </div>
+            </div>
+          </div>         
         </div>
+        
     </>
     )
 
