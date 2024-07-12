@@ -40,6 +40,7 @@ body{
     color: #ffffff; /* Warna teks */
     font-weight: bold; /* Tebal teks */
     background-color: rgb(244, 206, 20);
+    padding: 10px 0px 10px 10px;
 
   }
   .Sidebar .logo1 {
@@ -47,6 +48,7 @@ body{
     color: #ffffff; 
     font-weight: lighter; 
     background-color: rgb(244, 206, 20);
+    padding: 10px 10px 10px 0px;
   }
   .Sidebar .home a,
   .Sidebar .chat a,
