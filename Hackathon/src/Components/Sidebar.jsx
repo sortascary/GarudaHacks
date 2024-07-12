@@ -17,19 +17,21 @@ function Sidebar() {
         <>
             <nav className='Sidebar'>
                 <ul>
-                    <h1 className='logo'>Gym</h1>
-                    <h1 className='logo1'>Bro</h1>
+                    <div className='headerSidebar'>
+                        <h1 className='logo'>Gym</h1>
+                        <h1 className='logo1'>Bro!</h1>
+                    </div>
                     <li className='home'>
                         <Link to={'/'}>Home</Link>
                     </li>
-                    <li className='chat'>
+                    <li className='home'>
                         <Link to={'/Chat'}>Chat</Link>
                     </li>
-                    <li className='list'>
+                    <li className='home'>
                         <Link to={'/List'}>List</Link>
                     </li>
                     <li className='logout'>
-                        <button onClick={signout}>Log Out</button>
+                        <Link onClick={signout}>Log Out</Link>
                     </li>
                 </ul>
             </nav>
