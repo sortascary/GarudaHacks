@@ -47,7 +47,8 @@ function Routine() {
     <>
       <h1 style={{ textAlign: 'center' }}>Routine</h1>
       <div style={{ width: '500px', textAlign: 'left' }}>
-        <p>{day[d - 1]} {h}:{min < 10 ? `0${min}` : min}</p>
+        <p style={{ textAlign: 'right' }}>{day[d - 1]} {h}:{min < 10 ? `0${min}` : min}</p>
+        <h2 style={{ textAlign: 'center' }}>Todays Challange</h2>
       </div>
       <ul>
         {data.map((routine) => (

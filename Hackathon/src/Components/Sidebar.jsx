@@ -29,7 +29,7 @@ function Sidebar() {
                         <Link to={'/List'}>List</Link>
                     </li>
                     <li className='logout'>
-                        <button onClick={signout}>Log Out</button>
+                        <Link onClick={signout}>Log Out</Link>
                     </li>
                 </ul>
             </nav>
