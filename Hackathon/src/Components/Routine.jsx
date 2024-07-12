@@ -53,7 +53,7 @@ function Routine() {
         <p style={{ textAlign: 'right' }}>{day[d - 1]} {h}:{min < 10 ? `0${min}` : min} {ampm}</p>
         <h2 style={{ textAlign: 'center' }}>Todays Challange</h2>
       </div>
-      <ul>
+      <ul className='listwork'>
         {data.map((routine) => (
           <li key={routine.id}>
             {renderListForDay(routine) && renderListForDay(routine).map((item, index) => (
