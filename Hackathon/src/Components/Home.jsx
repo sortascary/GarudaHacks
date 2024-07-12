@@ -12,15 +12,17 @@ function Home() {
   }, []);
 
   const d = currentTime.getDay();
-  const h = currentTime.getHours();
+  let h = currentTime.getHours();
   const min = currentTime.getMinutes();
+  const ampm = h >= 12 ? 'PM' : 'AM';
+  h = h % 12 || 12;
   const [day] = useState(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Ahad' ]);
 
   return (
     <>
     <h1 style={{textAlign: 'center'}}>Home</h1>
     <div style={{width: '500px', textAlign: 'left'}}>
-    <p style={{ textAlign: 'right' }}>{day[d - 1]} {h}:{min < 10 ? `0${min}` : min}</p>
+    <p style={{ textAlign: 'right' }}>{day[d - 1]} {h}:{min < 10 ? `0${min}` : min} {ampm}</p>
     </div>
     </>
   )

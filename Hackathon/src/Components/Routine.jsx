@@ -6,6 +6,7 @@ function Routine() {
   const [data, setData] = useState([]);
   const [day, setDay] = useState(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Ahad' ]);
   const [currentTime, setCurrentTime] = useState(new Date());
+  
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -16,8 +17,10 @@ function Routine() {
   }, []);
 
   const d = currentTime.getDay();
-  const h = currentTime.getHours();
+  let h = currentTime.getHours();
   const min = currentTime.getMinutes();
+  const ampm = h >= 12 ? 'PM' : 'AM';
+  h = h % 12 || 12;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -47,7 +50,7 @@ function Routine() {
     <>
       <h1 style={{ textAlign: 'center' }}>Routine</h1>
       <div style={{ width: '500px', textAlign: 'left' }}>
-        <p style={{ textAlign: 'right' }}>{day[d - 1]} {h}:{min < 10 ? `0${min}` : min}</p>
+        <p style={{ textAlign: 'right' }}>{day[d - 1]} {h}:{min < 10 ? `0${min}` : min} {ampm}</p>
         <h2 style={{ textAlign: 'center' }}>Todays Challange</h2>
       </div>
       <ul>
