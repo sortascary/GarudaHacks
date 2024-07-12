@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword, signInWithPopup, createUserWithEmailAndPassword} from 'firebase/auth';
 import { auth, GoogleProvider } from '../Config/Firebase';
 
+
 function Login() {
 const [name, setName] = useState('Login');
 const [otherName, setOtherName] = useState('SignUp');
